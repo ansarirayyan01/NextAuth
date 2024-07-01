@@ -5,6 +5,7 @@ import { NextResponse, NextRequest } from "next/server"
 import bcryptjs from "bcryptjs"
 import { sendEmail } from "@/helpers/mailer"
 
+connect()
 export async function Post(request : NextRequest) {
     try {
         const reqBody = await request.json()
@@ -41,4 +42,3 @@ export async function Post(request : NextRequest) {
 
 
 
-connect()
